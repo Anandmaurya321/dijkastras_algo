@@ -1,3 +1,4 @@
+
 import Graph from 'node-dijkstra';
 
 const drawConfig = {
@@ -1871,6 +1872,10 @@ const nodedata = {
   },
 };
 
+
+
+
+
 const graphdata = {
   1: { 73: 0.69, 234: 0.69, 265: 0.69, 52: 1.0 },
   2: { 156: 1.0, 263: 1.0 },
@@ -2184,11 +2189,16 @@ const graphdata = {
   300: { 231: 1.0, 299: 1.0 },
   302: { 261: 0.25, 288: 0.25 },
 };
+
+
+
 const route = new Graph(graphdata);
 const dijkstra = nodes => {
   if (nodes.length < 2) return [];
   return route.path(nodes[0], nodes[1]);
 };
+
+
 
 export { initialState, reducer, nodedata, graphdata, drawConfig };
 
@@ -2212,3 +2222,14 @@ const nodecolors = [
   '#fff5b3',
   '#ffc6c3',
 ];
+
+
+
+
+
+
+
+
+
+
+

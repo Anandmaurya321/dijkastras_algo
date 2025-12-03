@@ -1,4 +1,3 @@
-
 import { useEffect, useState, useReducer, useRef } from 'react';
 import { Stage } from 'react-konva';
 import { initialState, reducer } from '../store';
